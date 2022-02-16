@@ -643,7 +643,11 @@ class _HomePageState extends State<HomePage> {
             ),
             Padding(
               padding: const EdgeInsets.only(
-                  top: 18.0, bottom: 6, left: 8, right: 8),
+                top: 18.0,
+                bottom: 6,
+                left: 8,
+                right: 8,
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -654,7 +658,7 @@ class _HomePageState extends State<HomePage> {
                       const Text(' : ', style: TextStyle(fontSize: 10)),
                       const SizedBox(width: 3),
                       Text(
-                        '${gps.longitude}',
+                        '${gps.latitude}',
                         style: const TextStyle(fontSize: 10, color: Colors.red),
                       ),
                     ],
